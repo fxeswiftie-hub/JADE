@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+}
+
+body {
+  @apply bg-jade-50 text-gray-900;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-jade-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-jade-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-jade-400;
+}
+
+/* Smooth transitions */
+.transition-all {
+  @apply transition-all duration-300 ease-out;
+}
+
+.card-hover {
+  @apply hover:shadow-lg hover:-translate-y-1 transition-all duration-300;
+}
